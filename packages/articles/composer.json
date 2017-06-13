@@ -1,0 +1,12 @@
+{
+	"name": "articles/readability",
+	"description": "Package for readabilite text",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Victor Senchilo",
+			"email": "senchilovictor@gmail.com"
+		}
+	],
+	"require": {}
+}

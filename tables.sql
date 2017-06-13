@@ -1,0 +1,24 @@
+CREATE TABLE `articles` (
+	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL,
+	`text` TEXT,
+	`image__id` VARCHAR(255),
+	`score` NOT NULL INT,
+	`created_at` TIMESTAMP DEFAULT NOW(),
+	`updated_at` TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE `tags` (
+	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`tag` VARCHAR(255) NOT NULL,
+	`created_at` TIMESTAMP DEFAULT NOW(),
+	`updated_at` TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE `images` (
+	`id` INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`url` VARCHAR(255),
+	`path` VARCHAR(255),
+	`created_at` TIMESTAMP DEFAULT NOW(),
+	`updated_at` TIMESTAMP DEFAULT NOW()
+);
